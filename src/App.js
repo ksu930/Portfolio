@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Mousewheel, Pagination } from "swiper";
+import styled from "styled-components";
+import Header from "./components/Header";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <StContainer>
+      <Header />
+      <>
+        <Swiper
+          direction={"vertical"}
+          slidesPerView={1}
+          spaceBetween={30}
+          mousewheel={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Mousewheel, Pagination]}
+          className="mySwiper"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <SwiperSlide>
+            <MainPage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <MainPage />
+          </SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+        </Swiper>
+      </>
+    </StContainer>
   );
 }
 
 export default App;
+
+const StContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+`;

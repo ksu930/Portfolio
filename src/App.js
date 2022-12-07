@@ -44,4 +44,7 @@ const StContainer = styled.div`
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
+  .swiper-pagination-bullet {
+    background-color: #f4623a;
+  }
 `;

@@ -14,7 +14,10 @@ export default function MainPage() {
       <div className="top_container">
         <div className="title_box">
           <div className="title"> - 김성욱 -</div>
-          <div className="title">프론트엔드 포트폴리오</div>
+          <div className="title_inner_box">
+            <div className="title">프론트엔드 </div>
+            <div className="title">포트폴리오</div>
+          </div>
         </div>
         <div className="empty"></div>
         <div className="body_box">
@@ -114,13 +117,13 @@ const StLayout = styled.div`
       ),
       url(${backgroundImg}) center/100% no-repeat;
     width: 100%;
-    height: 50%;
+    height: 50vh;
     color: white;
     overflow: hidden;
-    @media (max-height: 770px) {
-      height: 40%;
-    }
     .title_box {
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
       font-family: LeferiPoint-BlackA;
       display: flex;
       flex-direction: column;
@@ -131,15 +134,20 @@ const StLayout = styled.div`
         font-size: 48px;
         font-weight: 900;
       }
+      .title_inner_box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
     }
     .empty {
       width: 100px;
       height: 28px;
       border-bottom: 3px solid #f4623a;
       margin-bottom: 28px;
-      @media (max-height: 780px) {
-        display: none;
-      }
     }
     .body_box {
       display: flex;
@@ -147,9 +155,6 @@ const StLayout = styled.div`
       align-items: center;
       gap: 12px;
       margin-bottom: 48px;
-      @media (max-height: 730px) {
-        display: none;
-      }
       .body {
         color: #c5c8cb;
       }
@@ -162,35 +167,24 @@ const StLayout = styled.div`
       border-radius: 30px;
       padding: 16px 32px;
       font-size: 16px;
-      @media (max-height: 770px) {
-        display: none;
-      }
+      margin-bottom: 16px;
       &:hover {
         background-color: rgb(0, 0, 0, 0.5);
       }
-      transition: color 2s;
     }
   }
   .bottom_container {
     display: flex;
-    height: 40%;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    @media (max-height: 770px) {
-      height: 60%;
-      justify-content: flex-start;
-    }
     .bottom_title {
       font-family: LeferiPoint-BlackA;
       font-size: 48px;
       font-weight: 900;
       border-bottom: 1px solid #9da0a3;
-      @media (max-height: 730px) {
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
+      margin: 32px auto;
     }
     .bottom_body_box {
       box-sizing: border-box;
@@ -202,17 +196,12 @@ const StLayout = styled.div`
       margin: 0 auto 0 auto;
       align-items: center;
       justify-content: center;
-      @media (max-width: 786px) {
-        width: 95%;
-      }
     }
     .bottom_body_item {
       display: flex;
       flex-direction: row;
       margin-bottom: 32px;
-      @media (max-height: 730px) {
-        margin-bottom: 16px;
-      }
+      margin-right: 24px;
     }
     .bottom_body_item_left {
       margin-right: 24px;
@@ -228,18 +217,11 @@ const StLayout = styled.div`
       font-size: 20px;
       font-weight: 900;
       margin-bottom: 8px;
-      @media (max-height: 730px) {
-        font-size: 12px;
-        margin-bottom: 4px;
-      }
     }
     .bottom_body_item_right_body {
       display: flex;
       flex-wrap: nowrap;
       font-size: 16px;
-      @media (max-height: 730px) {
-        font-size: 12px;
-      }
     }
   }
 `;

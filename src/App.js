@@ -1,39 +1,15 @@
 import "./App.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Mousewheel, Pagination } from "swiper";
 import styled from "styled-components";
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
+import SkillsPage from "./components/SkillsPage";
 
 function App() {
   return (
     <StContainer>
       <Header />
-      <>
-        <Swiper
-          direction={"vertical"}
-          slidesPerView={1}
-          spaceBetween={30}
-          mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <MainPage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <MainPage />
-          </SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-        </Swiper>
-      </>
+      <MainPage />
+      <SkillsPage />
     </StContainer>
   );
 }
@@ -41,9 +17,21 @@ function App() {
 export default App;
 
 const StContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow-y: hidden;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    height: 20%; /* 스크롤바의 길이 */
+    background: var(--gray5); /* 스크롤바의 색상 */
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: none; /*스크롤바 뒷 배경 색상*/
+  }
   .swiper-pagination-bullet {
     background-color: #f4623a;
   }

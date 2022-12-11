@@ -117,7 +117,7 @@ const StLayout = styled.div`
       ),
       url(${backgroundImg}) center/100% no-repeat;
     width: 100%;
-    height: 50vh;
+    height: 61vh;
     color: white;
     overflow: hidden;
     .title_box {
@@ -178,13 +178,13 @@ const StLayout = styled.div`
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     .bottom_title {
       font-family: LeferiPoint-BlackA;
       font-size: 48px;
       font-weight: 900;
       border-bottom: 1px solid #9da0a3;
-      margin: 32px auto;
+      margin: 48px auto;
     }
     .bottom_body_box {
       box-sizing: border-box;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
 import SkillsPage from "./components/SkillsPage";
+import Archiving from "./components/Archiving";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <MainPage />
       <SkillsPage />
+      <Archiving />
     </StContainer>
   );
 }
@@ -18,9 +20,9 @@ export default App;
 
 const StContainer = styled.div`
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  min-height: 100vh;
+  max-height: fit-content;
+
   ::-webkit-scrollbar {
     width: 5px;
   }

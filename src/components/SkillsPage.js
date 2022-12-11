@@ -151,7 +151,7 @@ const StLayout = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #f9c51d;
-  padding-bottom: 28px;
+  padding-bottom: 48px;
   img {
     width: 70px;
     height: 70px;
@@ -162,7 +162,7 @@ const StLayout = styled.div`
     font-size: 48px;
     font-weight: 900;
     border-bottom: 1px solid #4d5053;
-    margin: 32px auto;
+    margin: 48px auto;
   }
   .container {
     width: 60%;
@@ -172,6 +172,7 @@ const StLayout = styled.div`
     gap: 28px;
   }
   .skill_box {
+    box-sizing: border-box;
     height: fit-content;
     width: 300px;
     display: flex;
@@ -179,6 +180,10 @@ const StLayout = styled.div`
     background-color: white;
     padding: 28px 20px;
     border-radius: 24px;
+    &:hover {
+      transform: translateY(8px);
+      transition: transform 0.2s ease;
+    }
     .skill_box_title {
       display: flex;
       flex-direction: row;

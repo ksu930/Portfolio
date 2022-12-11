@@ -11,15 +11,18 @@ export default function Header() {
         <div>SungUk's Portfolio</div>
       </div>
       <div className="right_div">
-        <a href="https://github.com/ksu930">
-          <GoMarkGithub />
-        </a>
-        <a href="https://velog.io/@ksu930">
-          <SiMicrodotblog />
-        </a>
-        <a href="https://www.instagram.com/ddungwukkim/">
-          <GrInstagram />
-        </a>
+        <GoMarkGithub
+          onClick={() => window.open("https://github.com/ksu930")}
+          style={{ cursor: "pointer" }}
+        />
+        <SiMicrodotblog
+          onClick={() => window.open("https://velog.io/@ksu930")}
+          style={{ cursor: "pointer" }}
+        />
+        <GrInstagram
+          onClick={() => window.open("https://www.instagram.com/ddungwukkim/")}
+          style={{ cursor: "pointer" }}
+        />
       </div>
     </StHeaderContainer>
   );

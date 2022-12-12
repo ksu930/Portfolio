@@ -22,6 +22,10 @@ import clone5 from "../sources/clone5.png";
 import clone6 from "../sources/clone6.png";
 import clone7 from "../sources/clone7.png";
 import clone8 from "../sources/clone8.png";
+import port1 from "../sources/port1.JPG";
+import port2 from "../sources/port2.JPG";
+import port3 from "../sources/port3.JPG";
+import port4 from "../sources/port4.JPG";
 
 export default function Projects() {
   return (
@@ -29,8 +33,8 @@ export default function Projects() {
       <div className="title">PROJECTS</div>
       <div className="body_wrap">
         <div className="body_container">
-          <div className="body_title">OP.GG 클론</div>
-          <div className="body_day">2022.10.28 ~ 2022.11.03 (1주일)</div>
+          <div className="body_title">Portfolio</div>
+          <div className="body_day">2022.12.6 ~ 2022.12.18 </div>
           <div className="body_contents">
             <div className="carosel_wrap">
               <Swiper
@@ -44,42 +48,22 @@ export default function Projects() {
               >
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
-                    <img src={clone1} alt="clone1" />
+                    <img src={port1} alt="port1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
-                    <img src={clone2} alt="clone2" />
+                    <img src={port2} alt="port2" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
-                    <img src={clone3} alt="clone3" />
+                    <img src={port3} alt="port3" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
-                    <img src={clone4} alt="clone4" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone5} alt="clone5" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone6} alt="clone6" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone7} alt="clone7" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone8} alt="clone8" />
+                    <img src={port4} alt="port4" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -87,37 +71,26 @@ export default function Projects() {
             <div className="text_wrap">
               <div className="summary">
                 <div className="summary_text_box">
-                  <b>
-                    OP.GG라는 게임 커뮤니티 사이트를 최대한 유사하게 구현한
-                    프로젝트
-                  </b>
-                  서비스되고 있는 웹페이지를 선정하여 CSS적으로 최대한 유사하게
-                  구현해보는 것을 목적으로 실시한 프로젝트입니다.
+                  <b>포트폴리오 용도로 제작한 웹사이트</b>입니다.
                   <br></br>
                   <br></br>
-                  기존 프로젝트의 MVP 기능과 스코프를 비슷하게 하여,&nbsp;
-                  <span className="pink">React</span>,&nbsp;
-                  <span className="pink">Redux</span>의 사용을 숙달하고 현업에서
-                  많이 사용하는&nbsp;<span className="pink">CSS속성</span>에는
-                  어떤것이 있는지 공부해보고, 내것으로 만드는 것이 목표였습니다.
+                  부트캠프기간 동안 치열하게 진행했던 프로젝트들을 하나의
+                  포트폴리오에 담기위해 제작한 웹사이트입니다. 개발자로 취직을
+                  하고난 후에도 지금 만들어 놓은 포트폴리오를 계속
+                  업그레이드하여 활용할 생각입니다.
                   <br></br>
                   <br></br>
-                  평소에 자주 사용하였지만 정확한 원리를 모르고 사용했었던
-                  속성들에 대해서 공부하는 시간을 가질수 있었습니다.
-                  모든페이지를 구현해보고싶었지만, 1주일이라는 시간적 제약으로
-                  인하여 메인페이지와 커뮤니티 페이지만 구현하였습니다.
-                  <br></br>
-                  <br></br>
-                  Redux의 보일러코드를 줄이고, 불편한 API 통신 절차를 개선하기
-                  위해 &nbsp;<span className="pink">Recoil</span>과 &nbsp;
-                  <span className="pink">React-query</span>를 일부 적용
-                  시켜보았습니다.
+                  포트폴리오는 최종프로젝트를 진행하며 연습했던{" "}
+                  <span className="pink">반응형 웹페이지</span>를 적용하였고,{" "}
+                  <span className="pink">S3</span>와{" "}
+                  <span className="pink">Cloudfront</span>를 사용해
+                  배포하였습니다.
                 </div>
                 <div className="summary_button_outer_box">
                   <div
                     className="summary_button_box"
                     onClick={() =>
-                      window.open("https://github.com/ksu930/miniproject")
+                      window.open("https://github.com/ksu930/Portfolio")
                     }
                   >
                     자세히 보기 &nbsp; ▶ READ ME
@@ -128,28 +101,22 @@ export default function Projects() {
                 <div className="info_content">
                   <div className="info_content_title">✔ 주요기능</div>
                   <div className="info_content_body">
-                    - 회원가입(유효성검사, 헬퍼 텍스트, 중복확인)
-                    <br></br>- 로그인(토큰저장)
-                    <br></br>- 로그인 / 로그아웃 상태에 따른 헤더 반응
-                    <br></br>- 게시글 작성 / 조회 / 수정 / 삭제(이미지포함)
-                    <br></br>- 댓글 작성 / 조회 / 수정 / 삭제
-                    <br></br>- 게시글 좋아요 기능
-                    <br></br>- 페이지네이션
-                    <br></br>- 검색기능
+                    - 간단한 자기소개
+                    <br></br>- 인적사항
+                    <br></br>- 기술스택
+                    <br></br>- 깃허브, 기술블로그 링크
+                    <br></br>- 프로젝트 경험
                   </div>
                 </div>
                 <div className="info_content">
                   <div className="info_content_title">✔ Frontend</div>
                   <div className="info_content_body">
                     - React
-                    <br></br>- Redux(toolkit)
+                    <br></br>- S3
                     <br></br>- Vercel
-                    <br></br>- Axios
-                    <br></br>- Json-server
+                    <br></br>- Cloudfront
+                    <br></br>- Swiper
                     <br></br>- Styled-component
-                    <br></br>- React-query
-                    <br></br>- Recoil
-                    <br></br>
                   </div>
                 </div>
                 <div className="info_content">
@@ -157,19 +124,21 @@ export default function Projects() {
                   <div
                     className="info_content_body_a"
                     onClick={() =>
-                      window.open("https://github.com/ksu930/cloneproject")
+                      window.open("https://github.com/ksu930/Portfolio")
                     }
                   >
-                    https://github.com/ksu930/cloneproject
+                    https://github.com/ksu930/Portfolio
                   </div>
                 </div>
                 <div className="info_content_last">
                   <div className="info_content_title">✔ URL</div>
                   <div
                     className="info_content_body_a"
-                    onClick={() => window.open("https://opggclone.vercel.app/")}
+                    onClick={() =>
+                      window.open("https://www.ksu-portfolio.com/")
+                    }
                   >
-                    https://opggclone.vercel.app/
+                    https://www.ksu-portfolio.com/
                   </div>
                 </div>
               </div>
@@ -241,8 +210,8 @@ export default function Projects() {
                     OP.GG라는 게임 커뮤니티 사이트를 최대한 유사하게 구현한
                     프로젝트
                   </b>
-                  서비스되고 있는 웹페이지를 선정하여 CSS적으로 최대한 유사하게
-                  구현해보는 것을 목적으로 실시한 프로젝트입니다.
+                  입니다. 서비스되고 있는 웹페이지를 선정하여 CSS적으로 최대한
+                  유사하게 구현해보는 것을 목적으로 실시한 프로젝트입니다.
                   <br></br>
                   <br></br>
                   기존 프로젝트의 MVP 기능과 스코프를 비슷하게 하여,&nbsp;
@@ -267,7 +236,7 @@ export default function Projects() {
                   <div
                     className="summary_button_box"
                     onClick={() =>
-                      window.open("https://github.com/ksu930/miniproject")
+                      window.open("https://github.com/ksu930/cloneproject")
                     }
                   >
                     자세히 보기 &nbsp; ▶ READ ME
@@ -494,6 +463,9 @@ const StLayout = styled.div`
     margin: 0 auto;
     color: white;
     margin-bottom: 48px;
+    @media (max-width: 500px) {
+      font-size: 32px;
+    }
   }
   .body_wrap {
     width: 100%;

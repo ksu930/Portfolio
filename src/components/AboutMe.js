@@ -93,6 +93,9 @@ const StLayout = styled.div`
       font-weight: 900;
       border-bottom: 1px solid #9da0a3;
       margin: 48px auto;
+      @media (max-width: 500px) {
+        font-size: 32px;
+      }
     }
     .bottom_body_box {
       box-sizing: border-box;

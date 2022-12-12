@@ -40,6 +40,9 @@ const StHeaderContainer = styled.div`
   justify-content: space-between;
   background-color: white;
   color: black;
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
   a {
     text-decoration: none;
     color: black;

@@ -70,6 +70,9 @@ const StLayout = styled.div`
     border-bottom: 1px solid #4d5053;
     margin: 48px auto;
     color: white;
+    @media (max-width: 500px) {
+      font-size: 32px;
+    }
   }
   .container {
     box-sizing: border-box;

@@ -67,6 +67,9 @@ const StLayout = styled.div`
         color: white;
         font-size: 48px;
         font-weight: 900;
+        @media (max-width: 500px) {
+          font-size: 32px;
+        }
       }
       .title_inner_box {
         display: flex;

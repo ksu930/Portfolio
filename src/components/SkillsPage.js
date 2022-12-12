@@ -163,6 +163,9 @@ const StLayout = styled.div`
     font-weight: 900;
     border-bottom: 1px solid #4d5053;
     margin: 48px auto;
+    @media (max-width: 500px) {
+      font-size: 32px;
+    }
   }
   .container {
     width: 60%;
@@ -200,6 +203,7 @@ const StLayout = styled.div`
     }
   }
   .skill_box_outer {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 28px;

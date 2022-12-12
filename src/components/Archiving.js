@@ -83,7 +83,7 @@ const StLayout = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 380px;
+    max-width: 380px;
     height: 332px;
     padding: 16px;
     border-radius: 20px;
@@ -110,11 +110,15 @@ const StLayout = styled.div`
     color: #258ddb;
   }
   .body_main {
-    display: flex;
+    display: inline;
     flex-direction: row;
     font-size: 20px;
     .body_main_content1 {
+      display: inline;
       font-weight: bold;
+    }
+    .body_main_content2 {
+      display: inline;
     }
   }
   .body_sub {

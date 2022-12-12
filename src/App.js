@@ -5,12 +5,14 @@ import MainPage from "./components/MainPage";
 import SkillsPage from "./components/SkillsPage";
 import Archiving from "./components/Archiving";
 import Projects from "./components/Projects";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <StContainer>
       <Header />
       <MainPage />
+      <AboutMe />
       <SkillsPage />
       <Archiving />
       <Projects />

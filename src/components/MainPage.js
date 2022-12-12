@@ -156,6 +156,7 @@ const StLayout = styled.div`
       gap: 12px;
       margin-bottom: 48px;
       .body {
+        font-size: 16px;
         color: #c5c8cb;
       }
     }

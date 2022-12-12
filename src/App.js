@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MainPage from "./components/MainPage";
 import SkillsPage from "./components/SkillsPage";
 import Archiving from "./components/Archiving";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MainPage />
       <SkillsPage />
       <Archiving />
+      <Projects />
     </StContainer>
   );
 }

@@ -5,15 +5,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/zoom";
 import { Pagination, Zoom } from "swiper";
-import mini1 from "../sources/mini1.JPG";
-import mini2 from "../sources/mini2.JPG";
-import mini3 from "../sources/mini3.JPG";
-import mini4 from "../sources/mini4.JPG";
-import mini5 from "../sources/mini5.JPG";
-import mini6 from "../sources/mini6.JPG";
-import mini7 from "../sources/mini7.JPG";
-import mini8 from "../sources/mini8.JPG";
-import mini9 from "../sources/mini9.JPG";
+import mini1 from "../sources/mini1.png";
+import mini2 from "../sources/mini2.png";
+import mini3 from "../sources/mini3.png";
+import mini4 from "../sources/mini4.png";
+import mini5 from "../sources/mini5.png";
 import clone1 from "../sources/clone1.png";
 import clone2 from "../sources/clone2.png";
 import clone3 from "../sources/clone3.png";
@@ -485,6 +481,7 @@ export default function Projects({ ProjectRef }) {
                     - React
                     <br></br>- Redux(toolkit)
                     <br></br>- Vercel
+                    <br></br>- S3
                     <br></br>- Axios
                     <br></br>- Json-server
                     <br></br>- Styled-component
@@ -508,9 +505,13 @@ export default function Projects({ ProjectRef }) {
                   <div className="info_content_title">✔ URL</div>
                   <div
                     className="info_content_body_a"
-                    onClick={() => window.open("https://opggclone.vercel.app/")}
+                    onClick={() =>
+                      window.open(
+                        "http://clone--project.s3-website.ap-northeast-2.amazonaws.com/"
+                      )
+                    }
                   >
-                    https://opggclone.vercel.app/
+                    http://clone--project.s3-website.ap-northeast-2.amazonaws.com/
                   </div>
                 </div>
               </div>
@@ -556,26 +557,6 @@ export default function Projects({ ProjectRef }) {
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
                     <img src={mini5} alt="mini5" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={mini6} alt="mini6" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={mini7} alt="mini7" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={mini8} alt="mini8" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={mini9} alt="mini9" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -633,6 +614,7 @@ export default function Projects({ ProjectRef }) {
                     - React
                     <br></br>- Redux(thunk,toolkit)
                     <br></br>- Vercel
+                    <br></br>- S3
                     <br></br>- Axios
                     <br></br>- Json-server
                     <br></br>- React-intersection-observer
@@ -655,10 +637,12 @@ export default function Projects({ ProjectRef }) {
                   <div
                     className="info_content_body_a"
                     onClick={() =>
-                      window.open("https://miniproject-plum.vercel.app/")
+                      window.open(
+                        "http://mini--project.s3-website.ap-northeast-2.amazonaws.com"
+                      )
                     }
                   >
-                    https://miniproject-plum.vercel.app/
+                    http://mini--project.s3-website.ap-northeast-2.amazonaws.com
                   </div>
                 </div>
               </div>

@@ -80,14 +80,17 @@ const StLayout = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    width: 100%;
+    padding: 0 5rem;
+    justify-content: space-evenly;
     color: black;
-    gap: 60px;
+    gap: 40px;
   }
   .item_box {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    width: 100%;
     max-width: 380px;
     height: 332px;
     padding: 16px;
@@ -99,6 +102,9 @@ const StLayout = styled.div`
     &:hover {
       transform: translateY(8px);
       transition: transform 0.2s ease;
+    }
+    @media (max-width: 500px) {
+      height: 100%;
     }
   }
   .item_box_title {
@@ -113,6 +119,7 @@ const StLayout = styled.div`
   .link {
     font-size: 20px;
     color: #258ddb;
+    word-break: break-all;
   }
   .body_main {
     display: inline;

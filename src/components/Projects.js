@@ -20,8 +20,6 @@ import clone3 from "../sources/clone3.png";
 import clone4 from "../sources/clone4.png";
 import clone5 from "../sources/clone5.png";
 import clone6 from "../sources/clone6.png";
-import clone7 from "../sources/clone7.png";
-import clone8 from "../sources/clone8.png";
 import port1 from "../sources/port1.JPG";
 import port2 from "../sources/port2.JPG";
 import port3 from "../sources/port3.JPG";
@@ -425,16 +423,6 @@ export default function Projects({ ProjectRef }) {
                     <img src={clone6} alt="clone6" />
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone7} alt="clone7" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiper-zoom-container">
-                    <img src={clone8} alt="clone8" />
-                  </div>
-                </SwiperSlide>
               </Swiper>
             </div>
             <div className="text_wrap">
@@ -775,6 +763,7 @@ const StLayout = styled.div`
     display: block;
     width: 100%;
     height: auto;
+    max-height: 600px;
     object-fit: fill;
   }
   .swiper-pagination {

@@ -169,20 +169,23 @@ const StLayout = styled.div`
     }
   }
   .container {
-    width: 60%;
+    box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 28px;
+    width: 100%;
+    padding: 0 5rem;
+    justify-content: space-evenly;
+    gap: 40px;
   }
   .skill_box {
-    box-sizing: border-box;
-    height: fit-content;
-    width: 300px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    height: fit-content;
+    max-width: 380px;
+    width: 100%;
     background-color: white;
-    padding: 28px 20px;
+    padding: 32px 16px;
     border-radius: 24px;
     &:hover {
       transform: translateY(8px);
@@ -204,10 +207,12 @@ const StLayout = styled.div`
     }
   }
   .skill_box_outer {
+    max-width: 380px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 40px;
   }
   .item {
     display: flex;

@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "aws s3 sync ./build s3://ksu-portfolio.com --profile=sunguk",
-    "invalidate": "aws cloudfront create-invalidation --profile=sunguk --distribution-id E1J7T5Y4F8X6M0 --paths /*"
+    "invalidate": "aws cloudfront create-invalidation --profile=sunguk --distribution-id E1J7T5Y4F8X6M0 --paths /*",
+    "all": "npm run build && npm run deploy && npm run invalidate"
   },
   "eslintConfig": {
     "extends": [

@@ -7,9 +7,9 @@ import { ReactComponent as Mail } from "../sources/envelope-fill.svg";
 import { ReactComponent as Pen } from "../sources/pencil-fill.svg";
 import styled from "styled-components";
 
-export default function AboutMe() {
+export default function AboutMe({ AboutRef }) {
   return (
-    <StLayout>
+    <StLayout ref={AboutRef}>
       <div className="bottom_container">
         <div className="bottom_title">ABOUT ME</div>
         <div className="bottom_body_box">
@@ -81,6 +81,8 @@ const StLayout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 80px;
+
   .bottom_container {
     display: flex;
     height: fit-content;

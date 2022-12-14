@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import backgroundImg from "../sources/background.jpg";
 
-export default function MainPage() {
+export default function MainPage({ HomeRef, AboutRef }) {
   return (
-    <StLayout>
+    <StLayout ref={HomeRef}>
       <div className="top_container">
         <div className="title_box">
           <div className="title"> - 김성욱 -</div>
@@ -26,7 +26,17 @@ export default function MainPage() {
             몰입의 즐거움을 알고, 개발에 몰입하고 있습니다.
           </div>
         </div>
-        <div className="info_message">방문해 주셔서 감사합니다</div>
+        <div
+          className="info_message"
+          onClick={() =>
+            AboutRef.current.scrollIntoView({
+              block: "start",
+              behavior: "smooth",
+            })
+          }
+        >
+          방문해 주셔서 감사합니다
+        </div>
       </div>
     </StLayout>
   );
@@ -53,9 +63,8 @@ const StLayout = styled.div`
     width: 100%;
     height: 100%;
     color: white;
-
     .title_box {
-      margin-top: 16px;
+      margin-top: 6rem;
       margin-left: auto;
       margin-right: auto;
       font-family: LeferiPoint-BlackA;
@@ -110,8 +119,10 @@ const StLayout = styled.div`
       padding: 16px 32px;
       font-size: 16px;
       margin-bottom: 16px;
+      cursor: pointer;
       &:hover {
-        background-color: rgb(0, 0, 0, 0.5);
+        background-color: #f24516;
+        transition: background-color 0.5s;
       }
     }
   }

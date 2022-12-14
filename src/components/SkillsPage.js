@@ -17,9 +17,9 @@ import axios from "../sources/axios.png";
 import notion from "../sources/notion.png";
 import slack from "../sources/slack.png";
 
-export default function SkillsPage() {
+export default function SkillsPage({ SkillsRef }) {
   return (
-    <StLayout>
+    <StLayout ref={SkillsRef}>
       <div className="title">SKILLS</div>
       <div className="container">
         <div className="skill_box">
@@ -152,6 +152,7 @@ const StLayout = styled.div`
   align-items: center;
   background-color: #f9c51d;
   padding-bottom: 48px;
+  scroll-margin-top: 80px;
   img {
     width: 70px;
     height: 70px;

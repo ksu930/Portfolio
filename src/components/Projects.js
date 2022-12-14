@@ -26,11 +26,246 @@ import port1 from "../sources/port1.JPG";
 import port2 from "../sources/port2.JPG";
 import port3 from "../sources/port3.JPG";
 import port4 from "../sources/port4.JPG";
+import l1 from "../sources/l1.png";
+import l2 from "../sources/l2.png";
+import l3 from "../sources/l3.png";
+import l4 from "../sources/l4.png";
+import l6 from "../sources/l6.png";
+import l7 from "../sources/l7.png";
+import l8 from "../sources/l8.png";
+import l9 from "../sources/l9.png";
+import l10 from "../sources/l10.png";
+import l11 from "../sources/l11.png";
+import l12 from "../sources/l12.png";
+import l13 from "../sources/l13.png";
+import l14 from "../sources/l14.png";
+import l15 from "../sources/l15.png";
+import l16 from "../sources/l16.png";
+import l17 from "../sources/l17.png";
+import l18 from "../sources/l18.png";
+import l19 from "../sources/l19.png";
+import l20 from "../sources/l20.png";
 
-export default function Projects() {
+export default function Projects({ ProjectRef }) {
   return (
-    <StLayout>
+    <StLayout ref={ProjectRef}>
       <div className="title">PROJECTS</div>
+      <div className="body_wrap">
+        <div className="body_container">
+          <div className="body_title">등대지기</div>
+          <div className="body_day">2022.12.6 ~ 2022.12.18 </div>
+          <div className="body_contents">
+            <div className="carosel_wrap">
+              <Swiper
+                zoom={true}
+                pagination={{
+                  type: "fraction",
+                }}
+                loop={true}
+                modules={[Pagination, Zoom]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l1} alt="l1" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l2} alt="l2" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l3} alt="l3" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l4} alt="l4" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l6} alt="l6" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l7} alt="l7" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l8} alt="l8" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l9} alt="l9" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l10} alt="l10" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l11} alt="l11" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l12} alt="l12" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l13} alt="l13" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l14} alt="l14" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l15} alt="l15" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l16} alt="l16" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l17} alt="l17" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l18} alt="l18" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l19} alt="l19" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={l20} alt="l20" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="text_wrap">
+              <div className="summary">
+                <div className="summary_text_box">
+                  <b>
+                    사용자가 부동산 매물에 대해 공인중개사에게 문의하고,
+                    발품팔았던 기록들을 메모할 수 있는 모바일 웹사이트
+                  </b>
+                  입니다.
+                  <br></br>
+                  <br></br>
+                  <span className="pink">
+                    프론트엔드 3명, 백엔드 3명, 디자이너 1명, 총 7명
+                  </span>
+                  이 함께 기획단계부터 서비스 런칭까지 진행했다는 점에서 큰
+                  의미가 있는 프로젝트 입니다.
+                  <br></br>
+                  <br></br>
+                  서버 상태 관리와 전역 상태 관리를 위해 이전 프로젝트 때 일부만
+                  적용했었던 <span className="pink">React-query</span>,{" "}
+                  <span className="pink">Recoil</span>을 숙달할 수 있는
+                  기간이었습니다.
+                  <br></br>
+                  자동로그인 구현을 위해 쿠키에 대해 공부할 수 있었고, refresh
+                  토큰을 활용한 access토큰 재발급 로직을 구현하면서{" "}
+                  <span className="pink">Axios-intercepter</span>
+                  기능의 활용도를 높일 수 있었습니다.
+                  <br></br>
+                  CSS 속성과 <span className="pink">Media-query</span>를
+                  사용하여 반응형 웹페이지를 구현하였고,{" "}
+                  <span className="pink">S3</span>와{" "}
+                  <span className="pink">Cloudfront</span>를 사용해 배포를
+                  진행했습니다.
+                </div>
+                <div className="summary_button_outer_box">
+                  <div
+                    className="summary_button_box"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/H99-9-A-1Team-Project/Front-End"
+                      )
+                    }
+                  >
+                    자세히 보기 &nbsp; ▶ READ ME
+                  </div>
+                </div>
+              </div>
+              <div className="info">
+                <div className="info_content">
+                  <div className="info_content_title">✔ 주요기능</div>
+                  <div className="info_content_body">
+                    - 로그인(일반유저 / 공인중개사 분리)
+                    <br></br>- 공인중개사와 매물에 대한 상담
+                    <br></br>- 발품팔았던 매물에 대한 기록
+                    <br></br>- 지도 API를 활용한 상담과 기록의 위치 시각화
+                    <br></br>- 상담목록 검색
+                    <br></br>- 공인중개사 상담에 대한 평가(좋아요)
+                    <br></br>- 프로필 편집
+                    <br></br>- 공인중개사 계정관리(완료 시 이메일 전송)
+                    <br></br>- 이미지 압축
+                  </div>
+                </div>
+                <div className="info_content">
+                  <div className="info_content_title">✔ Frontend</div>
+                  <div className="info_content_body">
+                    - React
+                    <br></br>- React-query
+                    <br></br>- Recoil
+                    <br></br>- S3
+                    <br></br>- Cloudfront
+                    <br></br>- Axios
+                    <br></br>- Styled-component
+                    <br></br>- Toast-ui-editor
+                    <br></br>- Swiper
+                  </div>
+                </div>
+                <div className="info_content">
+                  <div className="info_content_title">✔ GitHub</div>
+                  <div
+                    className="info_content_body_a"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/H99-9-A-1Team-Project/Front-End"
+                      )
+                    }
+                  >
+                    https://github.com/H99-9-A-1Team-Project/Front-End
+                  </div>
+                </div>
+                <div className="info_content_last">
+                  <div className="info_content_title">✔ URL</div>
+                  <div
+                    className="info_content_body_a"
+                    onClick={() =>
+                      window.open("https://www.lighthousefriend.com/")
+                    }
+                  >
+                    https://www.lighthousefriend.com/
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="body_wrap">
         <div className="body_container">
           <div className="body_title">Portfolio</div>
@@ -113,7 +348,6 @@ export default function Projects() {
                   <div className="info_content_body">
                     - React
                     <br></br>- S3
-                    <br></br>- Vercel
                     <br></br>- Cloudfront
                     <br></br>- Swiper
                     <br></br>- Styled-component
@@ -371,11 +605,13 @@ export default function Projects() {
                   <br></br>
                   git에 대해 공부했던적이 있었지만, 1인 프로젝트만 git에 대해
                   공부했던적이 있었지만, 1인 프로젝트만 하다보니 git의 필요성을
-                  느끼지 못했었습니다. 처음으로 협업을 진행하면서 git의 필요성을
-                  느끼고, HTML, CSS, JavaScript를 비롯하여{" "}
-                  <span className="pink">React</span>를 배우면서{" "}
-                  <span className="pink">Redux</span>를 활용한 전역상태관리가 왜
-                  필요한지, <span className="pink">Json-server</span>를 활용한
+                  느끼지 못했었습니다.
+                  <br></br>
+                  처음으로 협업을 진행하면서 git의 필요성을 느끼고, HTML, CSS,
+                  JavaScript를 비롯하여 <span className="pink">React</span>에
+                  대하여 공부할 수 있었고, <span className="pink">Redux</span>를
+                  활용한 전역상태관리가 왜 필요한지,{" "}
+                  <span className="pink">Json-server</span>를 활용한
                   mock-server가 왜 필요한지를 배우며 웹 개발의 기본 지식을 쌓을
                   수 있었던 프로젝트입니다.
                 </div>
@@ -455,6 +691,8 @@ const StLayout = styled.div`
   background-color: #1d809f;
   padding: 48px 24px;
   margin: 0 auto;
+  scroll-margin-top: 80px;
+
   .title {
     font-family: LeferiPoint-BlackA;
     font-size: 48px;
@@ -540,10 +778,7 @@ const StLayout = styled.div`
     object-fit: fill;
   }
   .swiper-pagination {
-    bottom: 0;
-    @media (max-width: 500px) {
-      bottom: 10px;
-    }
+    bottom: 0px;
   }
   .text_wrap {
     box-sizing: border-box;

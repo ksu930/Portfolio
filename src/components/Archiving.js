@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { GoMarkGithub } from "react-icons/go";
 import { SiMicrodotblog } from "react-icons/si";
 
-export default function Archiving() {
+export default function Archiving({ ArchRef }) {
   return (
-    <StLayout>
+    <StLayout ref={ArchRef}>
       <div className="title">ARCHIVING</div>
       <div className="container">
         <div
@@ -63,6 +63,8 @@ const StLayout = styled.div`
   align-items: center;
   background-color: #222;
   padding-bottom: 48px;
+  scroll-margin-top: 80px;
+
   .title {
     font-family: LeferiPoint-BlackA;
     font-size: 48px;

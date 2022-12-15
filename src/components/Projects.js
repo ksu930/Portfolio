@@ -16,10 +16,11 @@ import clone3 from "../sources/clone3.png";
 import clone4 from "../sources/clone4.png";
 import clone5 from "../sources/clone5.png";
 import clone6 from "../sources/clone6.png";
-import port1 from "../sources/port1.JPG";
-import port2 from "../sources/port2.JPG";
-import port3 from "../sources/port3.JPG";
-import port4 from "../sources/port4.JPG";
+import port1 from "../sources/port1.png";
+import port2 from "../sources/port2.png";
+import port3 from "../sources/port3.png";
+import port4 from "../sources/port4.png";
+import port5 from "../sources/port5.png";
 import l1 from "../sources/l1.png";
 import l2 from "../sources/l2.png";
 import l3 from "../sources/l3.png";
@@ -278,6 +279,11 @@ export default function Projects({ ProjectRef }) {
                 <SwiperSlide>
                   <div className="swiper-zoom-container">
                     <img src={port1} alt="port1" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-zoom-container">
+                    <img src={port5} alt="port5" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -674,7 +680,6 @@ const StLayout = styled.div`
     color: white;
     margin-bottom: 48px;
     word-break: break-word;
-
     @media (max-width: 500px) {
       font-size: 2rem;
     }

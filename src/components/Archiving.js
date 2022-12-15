@@ -67,13 +67,13 @@ const StLayout = styled.div`
 
   .title {
     font-family: LeferiPoint-BlackA;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     border-bottom: 1px solid #4d5053;
     margin: 48px auto;
     color: white;
     @media (max-width: 500px) {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
   .container {
@@ -111,15 +111,22 @@ const StLayout = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: black;
     font-weight: 600;
     gap: 8px;
+    word-break: break-word;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   .link {
     font-size: 20px;
     color: #258ddb;
     word-break: break-all;
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
   .body_main {
     display: inline;
@@ -128,6 +135,9 @@ const StLayout = styled.div`
     .body_main_content1 {
       display: inline;
       font-weight: bold;
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
     .body_main_content2 {
       display: inline;
@@ -135,7 +145,10 @@ const StLayout = styled.div`
   }
   .body_sub {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
+    @media (max-width: 500px) {
+      font-size: 0.75rem;
+    }
     ul {
       margin-left: 16px;
     }

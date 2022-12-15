@@ -667,14 +667,14 @@ const StLayout = styled.div`
 
   .title {
     font-family: LeferiPoint-BlackA;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     border-bottom: 1px solid white;
     margin: 0 auto;
     color: white;
     margin-bottom: 48px;
     @media (max-width: 500px) {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
   .body_wrap {
@@ -697,15 +697,21 @@ const StLayout = styled.div`
     background-color: #fff;
   }
   .body_title {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: black;
     font-weight: 600;
     margin-bottom: 24px;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   .body_day {
     color: #75787b;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 24px;
+    @media (max-width: 500px) {
+      font-size: 0.5rem;
+    }
   }
   .body_contents {
     width: 100%;
@@ -752,6 +758,9 @@ const StLayout = styled.div`
   }
   .swiper-pagination {
     bottom: 0px;
+    @media (max-width: 500px) {
+      font-size: 0.5rem;
+    }
   }
   .text_wrap {
     box-sizing: border-box;
@@ -766,13 +775,15 @@ const StLayout = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-
     width: 48%;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: normal;
     @media (max-width: 680px) {
       border-bottom: 1px solid #c5c8cb;
       width: 100%;
+    }
+    @media (max-width: 500px) {
+      font-size: 0.75rem;
     }
     b {
       font-weight: bold;
@@ -804,7 +815,7 @@ const StLayout = styled.div`
     @media (max-width: 680px) {
       margin: 20px 0;
       padding: 6px;
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
   .info {
@@ -836,7 +847,7 @@ const StLayout = styled.div`
     }
   }
   .info_content_title {
-    font-size: 20px;
+    font-size: 1.25rem;
     min-width: 104px;
     height: 100%;
     font-weight: bold;
@@ -844,18 +855,21 @@ const StLayout = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     @media (max-width: 500px) {
-      font-size: 16px;
+      font-size: 1rem;
       min-width: 85px;
     }
   }
   .info_content_body {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: normal;
     white-space: pre-line;
     word-break: break-all;
+    @media (max-width: 500px) {
+      font-size: 0.75rem;
+    }
   }
   .info_content_body_a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #258ddb;
     cursor: pointer;
     text-decoration: none;
@@ -863,6 +877,9 @@ const StLayout = styled.div`
     word-break: break-all;
     &:hover {
       text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+      font-size: 0.75rem;
     }
   }
 `;

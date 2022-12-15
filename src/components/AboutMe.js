@@ -91,12 +91,12 @@ const StLayout = styled.div`
     justify-content: center;
     .bottom_title {
       font-family: LeferiPoint-BlackA;
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 900;
       border-bottom: 1px solid #9da0a3;
       margin: 48px auto;
       @media (max-width: 500px) {
-        font-size: 32px;
+        font-size: 2rem;
       }
     }
     .bottom_body_box {
@@ -130,11 +130,17 @@ const StLayout = styled.div`
       font-size: 20px;
       font-weight: 900;
       margin-bottom: 8px;
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
     .bottom_body_item_right_body {
       display: flex;
       flex-wrap: nowrap;
-      font-size: 16px;
+      font-size: 1rem;
+      @media (max-width: 500px) {
+        font-size: 0.75rem;
+      }
     }
   }
 `;

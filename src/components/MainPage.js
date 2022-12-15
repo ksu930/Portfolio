@@ -75,9 +75,9 @@ const StLayout = styled.div`
       .title {
         color: white;
         font-size: 48px;
-        font-weight: 900;
+        font-weight: 3rem;
         @media (max-width: 500px) {
-          font-size: 32px;
+          font-size: 2rem;
         }
       }
       .title_inner_box {
@@ -96,17 +96,19 @@ const StLayout = styled.div`
       margin-bottom: 28px;
     }
     .body_box {
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 12px;
       margin-bottom: 48px;
+      padding: 0 12px;
       .body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 16px;
+        font-size: 1rem;
         color: #c5c8cb;
       }
     }
@@ -123,6 +125,9 @@ const StLayout = styled.div`
       &:hover {
         background-color: #f24516;
         transition: background-color 0.5s;
+      }
+      @media (max-width: 500px) {
+        font-size: 0.75rem;
       }
     }
   }

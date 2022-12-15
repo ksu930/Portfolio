@@ -154,18 +154,22 @@ const StLayout = styled.div`
   padding-bottom: 48px;
   scroll-margin-top: 80px;
   img {
-    width: 70px;
-    height: 70px;
+    width: 4rem;
+    height: 4rem;
     margin-right: 10px;
+    @media (max-width: 500px) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
   .title {
     font-family: LeferiPoint-BlackA;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     border-bottom: 1px solid #4d5053;
     margin: 48px auto;
     @media (max-width: 500px) {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
   .container {
@@ -195,15 +199,20 @@ const StLayout = styled.div`
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
       color: #f4623a;
       padding-bottom: 8px;
       margin-bottom: 8px;
       border-bottom: 1px solid #4d5053;
+      word-break: break-word;
     }
     .item_text {
-      font-size: 20px;
+      font-size: 1.25rem;
+      word-break: break-word;
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
   }
   .skill_box_outer {

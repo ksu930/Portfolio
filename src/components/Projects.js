@@ -673,6 +673,8 @@ const StLayout = styled.div`
     margin: 0 auto;
     color: white;
     margin-bottom: 48px;
+    word-break: break-word;
+
     @media (max-width: 500px) {
       font-size: 2rem;
     }
@@ -854,9 +856,10 @@ const StLayout = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    word-break: break-word;
     @media (max-width: 500px) {
       font-size: 1rem;
-      min-width: 85px;
+      min-width: fit-content;
     }
   }
   .info_content_body {

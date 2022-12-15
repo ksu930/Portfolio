@@ -168,6 +168,8 @@ const StLayout = styled.div`
     font-weight: 900;
     border-bottom: 1px solid #4d5053;
     margin: 48px auto;
+    word-break: break-word;
+
     @media (max-width: 500px) {
       font-size: 2rem;
     }

@@ -76,13 +76,13 @@ export default function AboutMe({ AboutRef }) {
   );
 }
 const StLayout = styled.div`
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   scroll-margin-top: 80px;
-
   .bottom_container {
     display: flex;
     height: fit-content;
@@ -90,13 +90,16 @@ const StLayout = styled.div`
     align-items: center;
     justify-content: center;
     .bottom_title {
+      box-sizing: border-box;
       font-family: LeferiPoint-BlackA;
       font-size: 3rem;
       font-weight: 900;
       border-bottom: 1px solid #9da0a3;
       margin: 48px auto;
+      word-break: break-word;
       @media (max-width: 500px) {
         font-size: 2rem;
+        word-break: break-word;
       }
     }
     .bottom_body_box {
@@ -111,18 +114,23 @@ const StLayout = styled.div`
       justify-content: center;
     }
     .bottom_body_item {
+      box-sizing: border-box;
       display: flex;
       flex-direction: row;
       margin-bottom: 32px;
       margin-right: 24px;
     }
     .bottom_body_item_left {
+      box-sizing: border-box;
       margin-right: 24px;
     }
     .bottom_body_item_right {
       display: flex;
       flex-direction: column;
       width: 180px;
+      @media (max-width: 500px) {
+        width: 130px;
+      }
     }
     .bottom_body_item_right_title {
       display: flex;

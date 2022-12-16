@@ -48,7 +48,7 @@ export default function Projects({ ProjectRef }) {
       <div className="body_wrap">
         <div className="body_container">
           <div className="body_title">등대지기</div>
-          <div className="body_day">2022.12.6 ~ 2022.12.18 </div>
+          <div className="body_day">2022.11.4 ~ 2022.12.16 </div>
           <div className="body_contents">
             <div className="carosel_wrap">
               <Swiper
@@ -731,7 +731,6 @@ const StLayout = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-
     min-height: fit-content;
   }
   .swiper {

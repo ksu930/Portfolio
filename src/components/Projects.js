@@ -174,15 +174,32 @@ export default function Projects({ ProjectRef }) {
                   의미가 있는 프로젝트 입니다.
                   <br></br>
                   <br></br>
+                  <span className="pink">구글 애널리틱스</span>를 적용하여
+                  사용자관리를 하였습니다. <br></br>
+                  <span className="pink">
+                    (사용자: 259명, 평균참여시간: 2분58초)
+                  </span>
+                  <br></br>
+                  <br></br>
+                  프론트단에서 이미지 압축 로직을 적용하여{" "}
+                  <span className="pink">
+                    duration 시간을 90% 가량 감소
+                  </span>{" "}
+                  시켰으며, 이미지 전송을 위한 최선의 방법을 찾아서 적용 시켜
+                  보았습니다.
+                  <br></br>
+                  <br></br>
                   서버 상태 관리와 전역 상태 관리를 위해 이전 프로젝트 때 일부만
                   적용했었던 <span className="pink">React-query</span>,{" "}
                   <span className="pink">Recoil</span>을 숙달할 수 있는
                   기간이었습니다.
                   <br></br>
+                  <br></br>
                   자동로그인 구현을 위해 쿠키에 대해 공부할 수 있었고, refresh
                   토큰을 활용한 access토큰 재발급 로직을 구현하면서{" "}
                   <span className="pink">Axios-intercepter</span>
                   기능의 활용도를 높일 수 있었습니다.
+                  <br></br>
                   <br></br>
                   CSS 속성과 <span className="pink">Media-query</span>를
                   사용하여 반응형 웹페이지를 구현하였고,{" "}

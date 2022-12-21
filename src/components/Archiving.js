@@ -22,7 +22,7 @@ export default function Archiving({ ArchRef }) {
           </div>
           <div className="body_sub">
             <ul>
-              <li>과거 프로젝트, 프로그램, 앱의 소스코드</li>
+              <li>과거 프로젝트, 프로그램의 소스코드</li>
               <li>혼자서 코딩 연습을 위해 작성했던 소스코드</li>
             </ul>
           </div>
